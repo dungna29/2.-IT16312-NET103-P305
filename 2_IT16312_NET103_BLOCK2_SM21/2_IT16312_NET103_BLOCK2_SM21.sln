@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_0_TaoWinformBangCode", "BAI_1_0_TaoWinformBangCode\BAI_1_0_TaoWinformBangCode.csproj", "{CFC8CCC0-3FB6-460D-AD81-3A732C578BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_1_TongQuanWindowForm", "BAI_1_1_TongQuanWindowForm\BAI_1_1_TongQuanWindowForm.csproj", "{A8F9447A-8F76-441A-8307-5DEEF0D6522A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFC8CCC0-3FB6-460D-AD81-3A732C578BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC8CCC0-3FB6-460D-AD81-3A732C578BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC8CCC0-3FB6-460D-AD81-3A732C578BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC8CCC0-3FB6-460D-AD81-3A732C578BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F9447A-8F76-441A-8307-5DEEF0D6522A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F9447A-8F76-441A-8307-5DEEF0D6522A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F9447A-8F76-441A-8307-5DEEF0D6522A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F9447A-8F76-441A-8307-5DEEF0D6522A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5A8F00B-E5C9-4574-A0BC-C4E167A14455}
+	EndGlobalSection
+EndGlobal
