@@ -58,9 +58,9 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.groupBox1.Controls.Add(this.txtAcc);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(24, 23);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(664, 304);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
@@ -69,18 +69,19 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // btn_TaoTaiKhoan
             // 
             this.btn_TaoTaiKhoan.Location = new System.Drawing.Point(234, 248);
-            this.btn_TaoTaiKhoan.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_TaoTaiKhoan.Margin = new System.Windows.Forms.Padding(6);
             this.btn_TaoTaiKhoan.Name = "btn_TaoTaiKhoan";
             this.btn_TaoTaiKhoan.Size = new System.Drawing.Size(220, 44);
             this.btn_TaoTaiKhoan.TabIndex = 13;
             this.btn_TaoTaiKhoan.Text = "Tạo tài khoản";
             this.btn_TaoTaiKhoan.UseVisualStyleBackColor = true;
+            this.btn_TaoTaiKhoan.Click += new System.EventHandler(this.btn_TaoTaiKhoan_Click);
             // 
             // cmbNamSinh
             // 
             this.cmbNamSinh.FormattingEnabled = true;
             this.cmbNamSinh.Location = new System.Drawing.Point(152, 177);
-            this.cmbNamSinh.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmbNamSinh.Margin = new System.Windows.Forms.Padding(6);
             this.cmbNamSinh.Name = "cmbNamSinh";
             this.cmbNamSinh.Size = new System.Drawing.Size(264, 33);
             this.cmbNamSinh.TabIndex = 11;
@@ -100,7 +101,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // 
             this.rbtnNu.AutoSize = true;
             this.rbtnNu.Location = new System.Drawing.Point(258, 135);
-            this.rbtnNu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rbtnNu.Margin = new System.Windows.Forms.Padding(6);
             this.rbtnNu.Name = "rbtnNu";
             this.rbtnNu.Size = new System.Drawing.Size(57, 29);
             this.rbtnNu.TabIndex = 9;
@@ -112,7 +113,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // 
             this.rbtnNam.AutoSize = true;
             this.rbtnNam.Location = new System.Drawing.Point(152, 135);
-            this.rbtnNam.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rbtnNam.Margin = new System.Windows.Forms.Padding(6);
             this.rbtnNam.Name = "rbtnNam";
             this.rbtnNam.Size = new System.Drawing.Size(74, 29);
             this.rbtnNam.TabIndex = 8;
@@ -123,7 +124,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // btnTuSinhMk
             // 
             this.btnTuSinhMk.Location = new System.Drawing.Point(432, 83);
-            this.btnTuSinhMk.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnTuSinhMk.Margin = new System.Windows.Forms.Padding(6);
             this.btnTuSinhMk.Name = "btnTuSinhMk";
             this.btnTuSinhMk.Size = new System.Drawing.Size(220, 44);
             this.btnTuSinhMk.TabIndex = 3;
@@ -144,7 +145,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(152, 90);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(6);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(264, 31);
             this.txtPass.TabIndex = 4;
@@ -164,7 +165,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // txtAcc
             // 
             this.txtAcc.Location = new System.Drawing.Point(152, 37);
-            this.txtAcc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtAcc.Margin = new System.Windows.Forms.Padding(6);
             this.txtAcc.Name = "txtAcc";
             this.txtAcc.Size = new System.Drawing.Size(264, 31);
             this.txtAcc.TabIndex = 4;
@@ -188,7 +189,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.ClientSize = new System.Drawing.Size(730, 350);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmRegister";
             this.Text = "Đăng ký tài khoản";
             this.groupBox1.ResumeLayout(false);

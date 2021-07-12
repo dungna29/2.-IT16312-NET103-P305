@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BAI_1_2_CRUD_ACCOUNT.Models
 {
+    [Serializable]
     public class Account
     {
         public int Id { get; set; }

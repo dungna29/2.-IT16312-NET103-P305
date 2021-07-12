@@ -18,7 +18,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Services
         {
             try
             {
-                _fs = new FileStream(path, FileMode.Create);
+                _fs = new FileStream(path, FileMode.OpenOrCreate);
                 _bf = new BinaryFormatter();
                 _bf.Serialize(_fs,lstTemp);
                 _fs.Close();
@@ -27,6 +27,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Services
             catch (Exception e)
             {
                 Console.WriteLine(e);
+                _fs.Close();
                 return "Ghi file thất bại";
             }
 
@@ -47,6 +48,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Services
             catch (Exception e)
             {
                 Console.WriteLine(e);
+                _fs.Close();
                 return null;
             }
         }

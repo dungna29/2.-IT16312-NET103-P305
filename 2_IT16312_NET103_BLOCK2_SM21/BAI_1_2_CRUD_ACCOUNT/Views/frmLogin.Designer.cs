@@ -37,6 +37,9 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.btn_Login = new System.Windows.Forms.Button();
             this.txt_Pass = new System.Windows.Forms.TextBox();
             this.txt_Acc = new System.Windows.Forms.TextBox();
+            this.btn_OpenFile = new System.Windows.Forms.Button();
+            this.lbl_fileNamePath = new System.Windows.Forms.Label();
+            this.lbl_checkdata = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_DangKy
@@ -48,6 +51,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.lbl_DangKy.TabIndex = 13;
             this.lbl_DangKy.TabStop = true;
             this.lbl_DangKy.Text = "Đăng ký?";
+            this.lbl_DangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_DangKy_LinkClicked);
             // 
             // lbl_QuenMatKhau
             // 
@@ -88,6 +92,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.btn_Login.TabIndex = 9;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = true;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // txt_Pass
             // 
@@ -108,11 +113,44 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.txt_Acc.TabIndex = 7;
             this.txt_Acc.Text = "dungna";
             // 
+            // btn_OpenFile
+            // 
+            this.btn_OpenFile.Location = new System.Drawing.Point(12, 270);
+            this.btn_OpenFile.Name = "btn_OpenFile";
+            this.btn_OpenFile.Size = new System.Drawing.Size(133, 42);
+            this.btn_OpenFile.TabIndex = 14;
+            this.btn_OpenFile.Text = "Mở data";
+            this.btn_OpenFile.UseVisualStyleBackColor = true;
+            this.btn_OpenFile.Click += new System.EventHandler(this.btn_OpenFile_Click);
+            // 
+            // lbl_fileNamePath
+            // 
+            this.lbl_fileNamePath.AutoSize = true;
+            this.lbl_fileNamePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fileNamePath.Location = new System.Drawing.Point(12, 315);
+            this.lbl_fileNamePath.Name = "lbl_fileNamePath";
+            this.lbl_fileNamePath.Size = new System.Drawing.Size(51, 20);
+            this.lbl_fileNamePath.TabIndex = 15;
+            this.lbl_fileNamePath.Text = "label3";
+            // 
+            // lbl_checkdata
+            // 
+            this.lbl_checkdata.AutoSize = true;
+            this.lbl_checkdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_checkdata.Location = new System.Drawing.Point(12, 344);
+            this.lbl_checkdata.Name = "lbl_checkdata";
+            this.lbl_checkdata.Size = new System.Drawing.Size(51, 20);
+            this.lbl_checkdata.TabIndex = 16;
+            this.lbl_checkdata.Text = "label3";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 261);
+            this.ClientSize = new System.Drawing.Size(543, 373);
+            this.Controls.Add(this.lbl_checkdata);
+            this.Controls.Add(this.lbl_fileNamePath);
+            this.Controls.Add(this.btn_OpenFile);
             this.Controls.Add(this.lbl_DangKy);
             this.Controls.Add(this.lbl_QuenMatKhau);
             this.Controls.Add(this.label2);
@@ -123,7 +161,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.MaximumSize = new System.Drawing.Size(559, 300);
+            this.MaximumSize = new System.Drawing.Size(559, 500);
             this.MinimumSize = new System.Drawing.Size(559, 300);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -142,5 +180,8 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.TextBox txt_Pass;
         private System.Windows.Forms.TextBox txt_Acc;
+        private System.Windows.Forms.Button btn_OpenFile;
+        private System.Windows.Forms.Label lbl_fileNamePath;
+        private System.Windows.Forms.Label lbl_checkdata;
     }
 }
