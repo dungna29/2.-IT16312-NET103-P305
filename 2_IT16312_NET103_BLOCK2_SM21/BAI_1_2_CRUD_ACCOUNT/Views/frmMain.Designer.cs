@@ -31,7 +31,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lưuFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mn_luuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.đọcFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátChươngTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,7 +80,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // hệThốngToolStripMenuItem
             // 
             this.hệThốngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lưuFileToolStripMenuItem,
+            this.mn_luuFile,
             this.đọcFileToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem,
             this.thoátChươngTrìnhToolStripMenuItem});
@@ -88,35 +88,36 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 19);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
             // 
-            // lưuFileToolStripMenuItem
+            // mn_luuFile
             // 
-            this.lưuFileToolStripMenuItem.Name = "lưuFileToolStripMenuItem";
-            this.lưuFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lưuFileToolStripMenuItem.Text = "Lưu File";
+            this.mn_luuFile.Name = "mn_luuFile";
+            this.mn_luuFile.Size = new System.Drawing.Size(177, 22);
+            this.mn_luuFile.Text = "Lưu File";
+            this.mn_luuFile.Click += new System.EventHandler(this.mn_luuFile_Click);
             // 
             // đọcFileToolStripMenuItem
             // 
             this.đọcFileToolStripMenuItem.Name = "đọcFileToolStripMenuItem";
-            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.đọcFileToolStripMenuItem.Text = "Đọc File";
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             // 
             // thoátChươngTrìnhToolStripMenuItem
             // 
             this.thoátChươngTrìnhToolStripMenuItem.Name = "thoátChươngTrìnhToolStripMenuItem";
-            this.thoátChươngTrìnhToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thoátChươngTrìnhToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.thoátChươngTrìnhToolStripMenuItem.Text = "Thoát chương trình";
             // 
             // lbl_AccLogin
             // 
             this.lbl_AccLogin.AutoSize = true;
             this.lbl_AccLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AccLogin.Location = new System.Drawing.Point(642, 5);
+            this.lbl_AccLogin.Location = new System.Drawing.Point(539, 4);
             this.lbl_AccLogin.Name = "lbl_AccLogin";
             this.lbl_AccLogin.Size = new System.Drawing.Size(72, 16);
             this.lbl_AccLogin.TabIndex = 16;
@@ -140,6 +141,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(134, 26);
             this.txtTimKiem.TabIndex = 12;
+            this.txtTimKiem.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtTimKiem_KeyUp);
             // 
             // label6
             // 
@@ -153,6 +155,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             // 
             // dgrid_Account
             // 
+            this.dgrid_Account.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrid_Account.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrid_Account.Location = new System.Drawing.Point(7, 51);
             this.dgrid_Account.MultiSelect = false;
@@ -160,6 +163,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.dgrid_Account.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrid_Account.Size = new System.Drawing.Size(763, 190);
             this.dgrid_Account.TabIndex = 0;
+            this.dgrid_Account.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_Account_CellClick);
             // 
             // groupBox2
             // 
@@ -191,6 +195,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.btn_Xoa.TabIndex = 12;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Sua
             // 
@@ -200,6 +205,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.btn_Sua.TabIndex = 12;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Add
             // 
@@ -209,6 +215,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.btn_Add.TabIndex = 12;
             this.btn_Add.Text = "Thêm";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // groupBox1
             // 
@@ -290,6 +297,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.cbxKhongHoatDong.TabIndex = 7;
             this.cbxKhongHoatDong.Text = "Không hoạt động";
             this.cbxKhongHoatDong.UseVisualStyleBackColor = true;
+            this.cbxKhongHoatDong.CheckedChanged += new System.EventHandler(this.cbxKhongHoatDong_CheckedChanged);
             // 
             // cbxHoatDong
             // 
@@ -300,6 +308,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.cbxHoatDong.TabIndex = 6;
             this.cbxHoatDong.Text = "Hoạt động";
             this.cbxHoatDong.UseVisualStyleBackColor = true;
+            this.cbxHoatDong.CheckedChanged += new System.EventHandler(this.cbxHoatDong_CheckedChanged);
             // 
             // label4
             // 
@@ -367,7 +376,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximumSize = new System.Drawing.Size(825, 486);
             this.MinimumSize = new System.Drawing.Size(825, 486);
             this.Name = "frmMain";
@@ -390,7 +399,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem hệThốngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lưuFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mn_luuFile;
         private System.Windows.Forms.ToolStripMenuItem đọcFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátChươngTrìnhToolStripMenuItem;

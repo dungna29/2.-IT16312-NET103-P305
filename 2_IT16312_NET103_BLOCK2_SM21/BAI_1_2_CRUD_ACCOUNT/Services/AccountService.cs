@@ -24,7 +24,10 @@ namespace BAI_1_2_CRUD_ACCOUNT.Services
 
         public string editAccount(Account account)
         {
-            throw new NotImplementedException();
+            int index = _lstAccounts.FindIndex(c => c.Id == account.Id);
+            if (index == -1) return "không tìm thấy đối tượng";
+            _lstAccounts[index] = account;
+            return "Sửa thành công";
         }
 
         public string removeAccount(int id)
@@ -47,7 +50,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Services
 
         public List<Account> getlstAccountsByAcc(string acc)
         {
-            throw new NotImplementedException();
+            return _lstAccounts.Where(c => c.Acc.StartsWith(acc)).ToList();
         }
 
         public void fillDataFromFileToService(List<Account> lstAccounts)

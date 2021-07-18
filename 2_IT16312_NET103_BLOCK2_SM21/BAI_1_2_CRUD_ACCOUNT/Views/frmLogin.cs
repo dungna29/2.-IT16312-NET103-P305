@@ -50,16 +50,22 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            lbl_checkdata.Text = _iAccountService.getlstAccounts().Count.ToString();
-            //Trước khi login có thể chekc lỗi để trống .....
-            //Câu điền kiên kiểm tra tài khoản bằng linq
-            if (_iAccountService.getlstAccounts().Where(c=>c.Acc == txt_Acc.Text && c.Pass == txt_Pass.Text) != null)
+            if (_iAccountService.getlstAccounts() != null)
             {
-                MessageBox.Show("Chúc mừng đăng nhập thành công", "Thông báo");
-                this.Close();
-                frmMain frmMain = new frmMain();
-                frmMain.Show();
+                lbl_checkdata.Text = _iAccountService.getlstAccounts().Count.ToString();
+                //Trước khi login có thể chekc lỗi để trống .....
+                //Câu điền kiên kiểm tra tài khoản bằng linq
+                if (_iAccountService.getlstAccounts().Any(c => c.Acc == txt_Acc.Text && c.Pass == txt_Pass.Text))
+                {
+                    MessageBox.Show("Chúc mừng đăng nhập thành công", "Thông báo");
+                    this.Hide();
+                    frmMain frmMain = new frmMain();
+                    frmMain.SenderDataFromLogin(txt_Acc,_fileNamePath);//Truyền dữ liệu từ login lên main khi đăng nhập thành công
+                    frmMain.Show();
+                }
+                return;
             }
+            MessageBox.Show("File Data rỗng ko thể login");
         }
     }
 }
