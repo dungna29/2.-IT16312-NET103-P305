@@ -67,5 +67,14 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             }
             MessageBox.Show("File Data rỗng ko thể login");
         }
+
+        private void txt_Acc_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txt_Acc.Text))
+            {
+                MessageBox.Show("Bạn ko đc để Empty", "Thông báo");
+                txt_Acc.Text = "";
+            }
+        }
     }
 }

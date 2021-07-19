@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_1_TongQuanWindowForm"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_2_CRUD_ACCOUNT", "BAI_1_2_CRUD_ACCOUNT\BAI_1_2_CRUD_ACCOUNT.csproj", "{C9D415A5-5499-4514-8C59-45A076CEFBFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_3_ADO.NET", "BAI_1_3_ADO.NET\BAI_1_3_ADO.NET.csproj", "{DEEDC27B-B584-46B6-BA6F-5F766AE75C02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C9D415A5-5499-4514-8C59-45A076CEFBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9D415A5-5499-4514-8C59-45A076CEFBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9D415A5-5499-4514-8C59-45A076CEFBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEDC27B-B584-46B6-BA6F-5F766AE75C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEDC27B-B584-46B6-BA6F-5F766AE75C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEDC27B-B584-46B6-BA6F-5F766AE75C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEDC27B-B584-46B6-BA6F-5F766AE75C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

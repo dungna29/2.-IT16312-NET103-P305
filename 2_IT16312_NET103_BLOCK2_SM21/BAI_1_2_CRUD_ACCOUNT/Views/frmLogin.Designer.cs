@@ -112,6 +112,7 @@ namespace BAI_1_2_CRUD_ACCOUNT.Views
             this.txt_Acc.Size = new System.Drawing.Size(180, 35);
             this.txt_Acc.TabIndex = 7;
             this.txt_Acc.Text = "dungna";
+            this.txt_Acc.TextChanged += new System.EventHandler(this.txt_Acc_TextChanged);
             // 
             // btn_OpenFile
             // 
