@@ -108,7 +108,7 @@ namespace BAI_1_3_ADO.NET
             _conn = _accountService.GetSqlConnection(_sqlConnectionStr);
             _conn.Open();
             string query =
-                @"INSERT INTO Accounts_ADO (Acc,Pass,Sex,YearofBirth,Status) VALUES (@Acc,@Pass,@Sex,@YearofBirth,@Status)";
+                @"INSERT INTO Accounts_ADO(Acc,Pass,Sex,YearofBirth,Status) VALUES (@Acc,@Pass,@Sex,@YearofBirth,@Status)";
             _cmd = _accountService.GetSqlCommand(query, _conn);
             _cmd.CommandText = query;
             //_cmd.Parameters.AddWithValue("@Id", Guid.NewGuid());//Tạo ra Guild tự động trên code
