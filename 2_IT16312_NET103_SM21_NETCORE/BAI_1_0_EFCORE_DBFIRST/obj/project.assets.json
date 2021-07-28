@@ -5796,24 +5796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DungnaPC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Dungna29\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Dungna29 Fpoly\\8. Demo\\Demo C#3\\2.-IT16312-NET103-P305\\2_IT16312_NET103_SM21_NETCORE\\BAI_1_0_EFCORE_DBFIRST\\BAI_1_0_EFCORE_DBFIRST.csproj",
+      "projectUniqueName": "D:\\Google Driver Dungna29\\8. Demo\\Demo C#3\\2.-IT16312-NET103-P305\\2_IT16312_NET103_SM21_NETCORE\\BAI_1_0_EFCORE_DBFIRST\\BAI_1_0_EFCORE_DBFIRST.csproj",
       "projectName": "BAI_1_0_EFCORE_DBFIRST",
-      "projectPath": "F:\\Dungna29 Fpoly\\8. Demo\\Demo C#3\\2.-IT16312-NET103-P305\\2_IT16312_NET103_SM21_NETCORE\\BAI_1_0_EFCORE_DBFIRST\\BAI_1_0_EFCORE_DBFIRST.csproj",
-      "packagesPath": "C:\\Users\\DungnaPC\\.nuget\\packages\\",
-      "outputPath": "F:\\Dungna29 Fpoly\\8. Demo\\Demo C#3\\2.-IT16312-NET103-P305\\2_IT16312_NET103_SM21_NETCORE\\BAI_1_0_EFCORE_DBFIRST\\obj\\",
+      "projectPath": "D:\\Google Driver Dungna29\\8. Demo\\Demo C#3\\2.-IT16312-NET103-P305\\2_IT16312_NET103_SM21_NETCORE\\BAI_1_0_EFCORE_DBFIRST\\BAI_1_0_EFCORE_DBFIRST.csproj",
+      "packagesPath": "C:\\Users\\Dungna29\\.nuget\\packages\\",
+      "outputPath": "D:\\Google Driver Dungna29\\8. Demo\\Demo C#3\\2.-IT16312-NET103-P305\\2_IT16312_NET103_SM21_NETCORE\\BAI_1_0_EFCORE_DBFIRST\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\DungnaPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Dungna29\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
