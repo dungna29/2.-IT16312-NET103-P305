@@ -20,5 +20,8 @@ namespace BAI_1_0_EFCORE_DBFIRST.Models
         public int? Sex { get; set; }
         public int? YearofBirth { get; set; }
         public bool? Status { get; set; }
+        public int? Dungna { get; set; }
+        [Column("dungna2")]
+        public int? Dungna2 { get; set; }
     }
 }
