@@ -20,7 +20,15 @@ namespace BAI_1_1_EFCORE_CODEFIRST.DBContext
                 optionsBuilder.UseSqlServer("Data Source=DUNGNA_PC2021\\SQLEXPRESS;Initial Catalog=IT16312_EFCODEFIRST;Persist Security Info=True;User ID=dungna29;Password=123");
             }
         }
-        //2. Tiến hành tạo bảng
+        //2. Khai báo bảng
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<CourseStudent> CourseStudents { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+          
+        }
     }
 }
