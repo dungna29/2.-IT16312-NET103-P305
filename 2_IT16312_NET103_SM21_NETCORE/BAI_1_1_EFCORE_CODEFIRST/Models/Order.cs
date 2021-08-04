@@ -8,20 +8,17 @@ using System.Threading.Tasks;
 
 namespace BAI_1_1_EFCORE_CODEFIRST.Models
 {
-    [Table("Accounts")]//Đặt tên bảng
-    public class Account
+    [Table("Orders")]//Đặt tên bảng
+    public class Order
     {
         [Key]//Chỉ định dưới nó sẽ là khóa chính
         public Guid Id { get; set; }
         [StringLength(29)]//Độ dài của chuỗi
-        public string Acc { get; set; }
-        [StringLength(29)]
-        public string Pass { get; set; }
-        public int? Sex { get; set; }
-        public int? YearofBirth { get; set; }
-        public bool? Status { get; set; }
+        public string Code { get; set; }
+        public DateTime? DateCreate { get; set; }
+        public int Status { get; set; }// 1. Chưa thanh toán, 2. Đã thanh toán
 
-        [ForeignKey("RoleId")]//Tạo tên cột khóa phụ
-        public Role Roles { get; set; }
+        [ForeignKey("AccountId")]//Tạo tên cột khóa phụ
+        public Account Account { get; set; }
     }
 }

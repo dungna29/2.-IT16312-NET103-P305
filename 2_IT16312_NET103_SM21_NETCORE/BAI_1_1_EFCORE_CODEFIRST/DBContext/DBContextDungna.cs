@@ -26,9 +26,8 @@ namespace BAI_1_1_EFCORE_CODEFIRST.DBContext
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseStudent> CourseStudents { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-          
-        }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }
